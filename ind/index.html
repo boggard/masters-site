@@ -31,17 +31,20 @@
                 <a class="menu-item active" href="index.html">
                     Индивидуальный раздел
                 </a>
-                <a class="sub-menu-item active" id="concept-link" href="#concept">
-                    Концепция
+                <a class="sub-menu-item" id="concept-link" href="#concept">
+                    TDD.Концепция
                 </a>
                 <a class="sub-menu-item" id="advantage-link" href="#advantage">
-                    Преимущества
+                    TDD.Преимущества
                 </a>
                 <a class="sub-menu-item" id="disadvantage-link" href="#fake-disadvantage">
-                    Недостатки
+                    TDD.Недостатки
                 </a>
                 <a class="sub-menu-item" id="self-link" href="#self">
-                    Личное мнение и опыт применения
+                    TDD.Личное мнение и опыт применения
+                </a>
+                <a class="sub-menu-item" id="links-link" href="#links">
+                    TDD.Полезные ссылки
                 </a>
             </div>
         </div>
@@ -221,6 +224,87 @@
                         или иных парадигм разработки программного обеспечения.
                     </p>
                 </div>
+
+                <div id="links">
+                    <p class="title">Выпускники прошлых лет, интересующиеся похожими темами</p>
+
+                    <div class="link-body">
+                        <span class="link-number">1.</span>
+                        <a class="link" href="http://masters.donntu.org/2011/fknt/larin/ind/index.htm">
+                            Ларин Б.И. Тестирование облачных приложений
+                        </a>
+                        <p class="link-info">
+                            <span class="link-info-title">Описание:</span>
+                            Рассмотрены тенденции развития облачных приложений и их тестирования на примере Google App
+                            Engine.
+                        </p>
+                    </div>
+                    <div class="link-body">
+                        <span class="link-number">2.</span>
+                        <a class="link" href="http://masters.donntu.org/2011/fknt/abdulina/ind/index.htm">
+                            Абдулина О.Р. Знакомство с проектированием взаимодействия
+                        </a>
+                        <p class="link-info">
+                            <span class="link-info-title">Описание:</span>
+                            Раскрыто понятие проектирование взаимодействия программных систем и даны реккомендации по
+                            изучению и применению данной области знаний.
+                        </p>
+                    </div>
+                    <div class="link-body">
+                        <span class="link-number">3.</span>
+                        <a class="link" href="http://masters.donntu.org/2012/fknt/kulish/ind/index.htm">
+                            Кулиш М.Н. Опыт изучения технологии JavaEE
+                        </a>
+                        <p class="link-info">
+                            <span class="link-info-title">Описание:</span>
+                            Описаны основы JavaEE, подлежащие изучению для будущего трудоустройства. Упомянуты
+                            библиотеки для модульного тестирования.
+                        </p>
+                    </div>
+
+                    <p class="title">Рекомендуемые ресурсы и литература</p>
+                    <div class="link-body">
+                        <span class="link-number">1.</span>
+                        <a class="link"
+                           href="https://www.litres.ru/kent-bek/ekstremalnoe-programmirovanie-razrabotka-cherez-testirovanie/chitat-onlayn/">
+                            Экстремальное программирование. Разработка через тестирование
+                        </a>
+                        <p class="link-info">
+                            <span class="link-info-title">Автор:</span>
+                            Бек К.
+                        </p>
+                        <p class="link-info">
+                            <span class="link-info-title">Описание:</span>
+                            Настольнаяк книга любого разработчика, желающего применять методологию разработки через
+                            тестирование.
+                        </p>
+                    </div>
+                    <div class="link-body">
+                        <span class="link-number">2.</span>
+                        <a class="link"
+                           href="http://ptgmedia.pearsoncmg.com/images/9780134291062/samplepages/9780134291062.pdf">
+                            Depeloper Testing
+                        </a>
+                        <p class="link-info">
+                            <span class="link-info-title">Автор:</span>
+                            Tarlinder A.
+                        </p>
+                        <p class="link-info">
+                            <span class="link-info-title">Описание:</span>
+                            Советы и рекомендации разработчику по процессу тестирования исходного кода.
+                        </p>
+                    </div>
+                    <div class="link-body">
+                        <span class="link-number">3.</span>
+                        <a class="link" href="https://habr.com/hub/tdd/">
+                            Habrahabr.TDD
+                        </a>
+                        <p class="link-info">
+                            <span class="link-info-title">Описание:</span>
+                            Набор русскоязычных статей и переводов о методологии TDD.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
@@ -233,6 +317,7 @@
         updateLink(document.getElementById("advantage"), document.getElementById("advantage-link"));
         updateLink(document.getElementById("disadvantage"), document.getElementById("disadvantage-link"));
         updateLink(document.getElementById("self"), document.getElementById("self-link"));
+        updateLink(document.getElementById("links"), document.getElementById("links-link"));
     }
 
     document.getElementById("main").addEventListener("scroll", updateLinks);
