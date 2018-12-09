@@ -1,0 +1,168 @@
+body {
+    background-color: rgba(0, 0, 0, .05);
+}
+
+.main-container {
+    display: flex;
+}
+
+nav {
+    width: 400px;
+    border: 1px solid lightgray;
+    border-radius: 2px;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    background-color: white;
+}
+
+nav .bio {
+    background-color: #e7e6d4;
+    padding: 10px;
+}
+
+nav .bio p {
+    text-align: center;
+}
+
+nav .divider {
+    border-bottom: 3px double;
+}
+
+nav .menu .menu-item {
+    display: block;
+    padding: 15px;
+    border-bottom: 1px solid;
+    color: black;
+    text-decoration: none;
+}
+
+nav .menu .menu-item:hover {
+    cursor: pointer;
+    background-color: #e7e6d4 !important;
+}
+
+nav .menu .menu-item.active, nav .menu .sub-menu-item.active {
+    background-color: #e7e6d4;
+}
+
+nav .menu .sub-menu .menu-item {
+    border: none;
+}
+
+nav .menu .sub-menu-item {
+    display: block;
+    padding: 10px 30px;
+    color: black;
+    text-decoration: none;
+}
+
+nav .menu .sub-menu .sub-menu-item:last-of-type {
+    border-bottom: 1px solid;
+}
+
+header {
+    border: 1px solid lightgray;
+    border-radius: 2px;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    background-color: #e7e6d4;
+    position: relative;
+}
+
+header .main-header {
+    margin: 0;
+    padding-bottom: 5px;
+    font-size: 26px;
+    text-align: center;
+    /*border-bottom: 1px solid;*/
+}
+
+header .sub-header {
+    margin: 0;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 22px;
+    text-align: center;
+    /*border-bottom: 1px dashed;*/
+}
+
+header .locale {
+    position: absolute;
+    bottom: 5px;
+    left: 15px;
+}
+
+main {
+    overflow-y: auto;
+    margin-left: 15px;
+    height: 100%;
+    width: 100%;
+}
+
+main .main-content {
+    padding: 15px;
+    border: 1px solid lightgray;
+    border-radius: 2px;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    background-color: white;
+    margin-top: 15px;
+}
+
+table#resume {
+    border-collapse: collapse;
+}
+
+table#resume td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+
+table#resume tr td:first-of-type {
+    font-weight: 600;
+    width: 20%;
+}
+
+#biography p, #ind p {
+    text-indent: 20pt;
+    word-wrap: break-word;
+}
+
+p.title {
+    text-align: center;
+    font-size: 20px;
+}
+
+p.text-center {
+    text-align: center;
+}
+
+.link-body .link-info {
+    margin-left: 15px;
+}
+
+.link-body .link, .link-body .link-info .link-info-title {
+    font-size: 18px;
+}
+
+.link-body .link, .link-body .link-info .link-info-title, table#resume tr td:first-of-type {
+    color: #969245;
+}
+
+p span.list-item {
+    margin-left: 30px;
+    list-style-position: inside;
+    display: list-item;
+}
+
+#tdd-img {
+    width: 300px;
+}
+
+#modular-img {
+    width: 600px;
+}
