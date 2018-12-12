@@ -1,9 +1,11 @@
+window.addEventListener("scroll", updateLinks);
+
 function isElementInViewport(el, last) {
     var rect = el.getBoundingClientRect();
 
     if (last) {
-        var main = document.getElementsByTagName("main")[0];
-        return main.scrollTop === (main.scrollHeight - main.offsetHeight);
+        var body = document.getElementsByTagName("body")[0];
+        return body.scrollTop + window.innerHeight >= body.offsetHeight;
     } else {
         return rect.bottom > (window.innerHeight || document.documentElement.clientHeight) / 2 &&
             rect.right > 0 &&
