@@ -139,7 +139,7 @@ p.title {
 }
 
 p.text-center {
-    text-align: center;
+    text-align: center !important;
 }
 
 .link-body .link-info {
@@ -165,4 +165,12 @@ p span.list-item {
 
 #modular-img {
     width: 600px;
+}
+
+#cfg-img {
+    width: 200px;
+}
+
+#sql-img {
+    width: 250px;
 }

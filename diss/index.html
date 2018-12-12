@@ -33,19 +33,19 @@
                 <a class="menu-item active" href="index.html">
                     Реферат
                 </a>
-                <a class="sub-menu-item active" id="intro-link" href="#intro">
+                <a class="sub-menu-item" id="intro-link" href="#fake-intro">
                     Введение
                 </a>
-                <a class="sub-menu-item" id="relevance-link" href="#relevance">
+                <a class="sub-menu-item" id="relevance-link" href="#fake-relevance">
                     Актуальность
                 </a>
-                <a class="sub-menu-item" id="goal-link" href="#goal">
+                <a class="sub-menu-item" id="goal-link" href="#fake-goal">
                     Цели и задачи исследования
                 </a>
                 <a class="sub-menu-item" id="world-link" href="#world">
                     Анализ существующих мировых решений
                 </a>
-                <a class="sub-menu-item" id="local-link" href="#local">
+                <a class="sub-menu-item" id="local-link" href="#fake-local">
                     Анализ существующих локальных решений
                 </a>
                 <a class="sub-menu-item" id="flow-link" href="#flow">
@@ -54,7 +54,7 @@
                 <a class="sub-menu-item" id="analyze-link" href="#analyze">
                     Техники и методологии статического анализа
                 </a>
-                <a class="sub-menu-item" id="outro-link" href="#outro">
+                <a class="sub-menu-item" id="outro-link" href="#fake-outro">
                     Выводы
                 </a>
                 <a class="sub-menu-item" id="links-link" href="#links">
@@ -66,7 +66,7 @@
 
     <main>
         <header>
-            <p class="main-header">Система автоматического анализа качества структуры базы данных</p>
+            <p id="fake-intro" class="main-header">Система автоматического анализа качества структуры базы данных</p>
             <p class="sub-header">Реферат</p>
             <div class="locale">
                 <a href="indexu.html">UA</a>
@@ -76,7 +76,7 @@
         <div id="diss" class="main-content">
             <div id="intro">
                 <p class="title">Введение</p>
-                <p>
+                <p id="fake-relevance">
                     В современной индустрии информационных технологий базы данных играют одну из главных ролей при
                     построении автоматизированных систем любой сложности и масштаба. Качество проектирования и
                     построения, а также эффективность использования базы данных напрямую влияет на общее
@@ -96,7 +96,7 @@
             </div>
             <div id="relevance">
                 <p class="title">Актуальность</p>
-                <p>
+                <p id="fake-goal">
                     Упомянутый ранее процесс анализа качества структуры базы данных по своей сути является статическим
                     анализом SQL-кода. В современном мире разработки программного обеспечения статический анализ
                     является залогом успеха всего проекта. Правильное и своевременное встраивание этого этапа в процесс
@@ -141,7 +141,7 @@
                     <span class="list-item">оценивает потери производительности и предлагает варианты решения обнаруженных проблем;</span>
                     <span class="list-item">формирует диаграммы потоков данных и объектов, позволяющие более наглядно представить структуру базы данных.</span>
                 </p>
-                <p>
+                <p id="fake-local">
                     Также стоит отменить компанию SonarSource с ее системами для анализа SQL-кода, в частности для TSQL
                     и PL/SQL диалектов [7]. Эта компания имеет в своем активе разработки анализаторов кода по
                     большинству ныне популярных языков программирования. Все они соответствуют единому интерфейсу
@@ -237,6 +237,11 @@
                     оптимизации программы. Данный процесс возможен благодаря построению и анализу графа потока
                     управления программой (ГПУ) (рис 2.).
                 </p>
+                <p class="text-center">
+                    <img id="cfg-img" src="../img/cfg.png"/>
+                    <br>
+                    <span>Рисунок 2 - Граф потока управления программой</span>
+                </p>
                 <p>
                     ГПУ является представлением с использованием графа всех путей выполнения программы. В графе потока
                     управления каждый узел представляет базовый блок, то есть прямолинейный фрагмент кода без каких-либо
@@ -262,6 +267,11 @@
                     таблица «users» неявно ссылается на таблицу «roles» - отсутствует внешний ключ. Во втором случае
                     допущена стилистическая ошибка, так как внешний ключ создан, но имя поле задано несоответственно
                     стандартам.
+                </p>
+                <p class="text-center" id="fake-outro">
+                    <img id="sql-img" src="../img/sql.png"/>
+                    <br>
+                    <span>Рисунок 3 - Ошибки в структуре базы данных</span>
                 </p>
                 <p>
                     Подобным образом можно проанализировать любое формализованное правило. Отталкивая от спецификации
@@ -359,6 +369,21 @@
         </div>
     </main>
 </div>
+
+<script type="application/javascript">
+    function updateLinks() {
+        updateLink(document.getElementById("intro"), document.getElementById("intro-link"));
+        updateLink(document.getElementById("relevance"), document.getElementById("relevance-link"));
+        updateLink(document.getElementById("goal"), document.getElementById("goal-link"));
+        updateLink(document.getElementById("world"), document.getElementById("world-link"));
+        updateLink(document.getElementById("local"), document.getElementById("local-link"));
+        updateLink(document.getElementById("flow"), document.getElementById("flow-link"));
+        updateLink(document.getElementById("analyze"), document.getElementById("analyze-link"));
+        updateLink(document.getElementById("outro"), document.getElementById("outro-link"));
+        updateLink(document.getElementById("links"), document.getElementById("links-link"));
+    }
+</script>
+<script src="../js/main.js" type="application/javascript"></script>
 </body>
 
 </html>
