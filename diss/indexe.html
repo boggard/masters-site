@@ -1,0 +1,397 @@
+<html>
+
+<head>
+    <title>Abstract - Varyanik Alexandr - The system of automated analysis of the quality of the database
+        structure</title>
+
+    <link href="../css/master_style.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="main-container">
+    <nav>
+        <div class="nav-item bio">
+            <div class="avatar"></div>
+            <p>Varyanik Alexandr</p>
+        </div>
+        <div class="divider"></div>
+        <div class="menu">
+            <a class="menu-item" href="index.html">
+                Resume
+            </a>
+            <div class="sub-menu">
+                <a class="menu-item active" href="index.html">
+                    Abstract
+                </a>
+                <a class="sub-menu-item" id="intro-link" href="#fake-intro">
+                    Introduction
+                </a>
+                <a class="sub-menu-item" id="relevance-link" href="#fake-relevance">
+                    Relevance
+                </a>
+                <a class="sub-menu-item" id="goal-link" href="#fake-goal">
+                    Goals and objectives of the study
+                </a>
+                <a class="sub-menu-item" id="world-link" href="#world">
+                    Analysis of existing world solutions
+                </a>
+                <a class="sub-menu-item" id="local-link" href="#fake-local">
+                    Analysis of existing local solutions
+                </a>
+                <a class="sub-menu-item" id="flow-link" href="#flow">
+                    Basic concepts and algorithm of the system
+                </a>
+                <a class="sub-menu-item" id="analyze-link" href="#analyze">
+                    Techniques and methodologies of static analysis
+                </a>
+                <a class="sub-menu-item" id="outro-link" href="#fake-outro">
+                    Conclusion
+                </a>
+                <a class="sub-menu-item" id="links-link" href="#links">
+                    List of sources
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <header>
+            <p id="fake-intro" class="main-header">The system of automated analysis of the quality of the database
+                structure</p>
+            <p class="sub-header">Abstract</p>
+            <div class="locale">
+                <a href="index.html">RU</a>
+                <a href="indexu.html">UA</a>
+            </div>
+        </header>
+        <div id="diss" class="main-content">
+            <div id="intro">
+                <p class="title">Introduction</p>
+                <p id="fake-relevance">
+                    In the modern information technology industry, databases play a major role in
+                    building automated systems of any complexity and scale. Design quality and
+                    building, as well as the efficiency of using the database directly affects the overall
+                    functioning of the system or software complex.
+                </p>
+                <p>
+                    Each database is defined by a structure that is nothing more than a set of instructions on
+                    SQL language, or rather one of its dialects. Thus, the process of analyzing the quality of the base
+                    structure
+                    data is to analyze its SQL code.
+                </p>
+                <p>
+                    Already there are systems that perform this task for other programming languages, but it is
+                    the creation of an automated system for analyzing the quality of the database structure (SFAD)
+                    developers and administrators to significantly increase the efficiency of their work and on time
+                    respond to errors at the stage of building databases.
+                </p>
+            </div>
+            <div id="relevance">
+                <p class="title">Relevance</p>
+                <p id="fake-goal">
+                    The process of analyzing the quality of the database structure mentioned earlier is inherently
+                    static.
+                    SQL code analysis in the modern world of software development, static analysis
+                    is the key to the success of the entire project. Proper and timely embedding of this stage in the
+                    process
+                    Writing code can significantly save both time and financial resources. Considering,
+                    how widely, for the moment, are SQL databases being used, a tool that allows
+                    comprehensively assess the quality and coherence of written SQL-code, can be extremely in demand.
+                    Important
+                    note that in proportion to the growth of the software system, the number of errors that can
+                    be allowed in writing source code, therefore in the development of databases, where you can often
+                    to meet large software systems, static analysis is particularly relevant.
+                </p>
+            </div>
+            <div id="goal">
+                <p class="title">Goals and objectives of the research</p>
+                <p>
+                    The purpose of this work is to design and build a system that allows
+                    automated analysis of the database structure described in the form of SQL instructions. According to
+                    the results
+                    work on the system should be solved the problem of allowing the developer to embed it
+                    in the process of describing and building the database structure and getting the analysis results in
+                    the form of a list
+                    vulnerabilities, bugs or recommendations for improvement.
+                </p>
+                <p>
+                    During the work on the project it is planned to hold:
+                    <span class="list-item">domain analysis and problem statement;</span>
+                    <span class="list-item">analysis of existing solutions to this problem;</span>
+                    <span class="list-item">analysis of methods for preliminary preparation of code for subsequent processing, review and selection of appropriate tools for this stage;</span>
+                    <span class="list-item">determination of database structure criteria for analysis;</span>
+                    <span class="list-item">analysis of the processing methods of the syntax tree obtained at the stage of preparation of the code [10];</span>
+                    <span class="list-item">review of existing methods of static analysis, the choice of optimal solutions for the task and their application;</span>
+                    <span class="list-item">introduction of the developed system into the database building process and its practical application.</span>
+                </p>
+            </div>
+            <div id="world">
+                <p class="title">Analysis of existing world solutions</p>
+                <p>
+                    From existing systems for automated analysis of relational database structures can be distinguished
+                    product designed for Microsoft Office Access DBMS [6].
+                </p>
+                <p>
+                    This software system works as an additional add-on for Microsoft Access and:
+                    <span class="list-item">forms detailed and detailed documentation on the database being analyzed, with various references to its objects or their SQL code;</span>
+                    <span class="list-item">conducts a detailed analysis of objects and relationships between them, identifying errors of various types, as well as possible means to eliminate them;</span>
+                    <span class="list-item">assesses performance losses and offers solutions to detected problems;</span>
+                    <span class="list-item">creates diagrams of data streams and objects, allowing a more visual representation of the database structure.</span>
+                </p>
+                <p id="fake-local">
+                    Also worth noting is SonarSource with its systems for analyzing SQL-code, in particular for TSQL
+                    and PL / SQL dialects [7]. This company has in its asset the development of code analyzers for
+                    most of the currently popular programming languages. They all correspond to a single interface.
+                    applications and used in the SonarQube web application, which allows you to manipulate all
+                    nuances of static analysis: set or change the rules and criteria of analysis, view
+                    analysis results categorized by categories and obtain quantitative quality assessments
+                    parsed code.
+                </p>
+                <p>
+                    In the context of Oracle DBMS, Visual Expert should be mentioned. This software solution is supplied
+                    in
+                    the form
+                    both desktop and server applications. Its main focus is the visualization
+                    components of the database structure, easy navigation and search for them. But in the list of
+                    functional
+                    The product also claims static analysis of PL / SQL code.
+                </p>
+            </div>
+            <div id="local">
+                <p class="title">Analysis of existing local solutions</p>
+                <p>
+                    Among the projects of graduates of DonNTU in the field of analysis and optimization of work with
+                    databases is
+                    highlight the master's work of Zaslavsky V.A. "System optimization client requests to servers
+                    distributed database "[9].
+                </p>
+                <p>
+                    This paper is not about the static structure of the database, but about the dynamic component of the
+                    work.
+                    with her - client requests. The system developed here uses the "ant algorithm" to search
+                    optimal query plan, thereby optimizing the original query.
+                </p>
+                <p>
+                    A distinctive feature of the project is that the author focuses on working with
+                    distributed databases and accordingly distributed queries. Emphasis on optimization
+                    done on network costs, not on relational database features and query. In part, this
+                    it can be considered a disadvantage, but in general it is the specifics of the project and the
+                    research conducted.
+                </p>
+            </div>
+            <div id="flow">
+                <p class="title">Basic concepts and algorithm of the system</p>
+                <p>
+                    In order to more fully reveal the essence of the automated quality analysis system
+                    database structure, it is necessary to give definitions to the basic concepts that are encountered
+                    at one stage or another
+                    the work of this software complex.
+                </p>
+                <p>
+                    Static code analysis is the process of identifying logical and stylistic errors.
+                    in the source code. Static analysis to some extent is analogous to the code review process (code
+                    review), but in automated form. Usually in practice both approaches are used, since each
+                    has a number of advantages [3].
+                </p>
+                <p>
+                    It should be noted that the code analysis process itself is the final stage of the chain of
+                    successive
+                    operations. It is based on lexical and syntactic parsing procedures, the implementation of which
+                    depends on the specifics of the text, in this case, the program code.
+                </p>
+                <p>
+                    Lexical analysis or parsing is the process of analyzing and recognizing certain
+                    elements or their groups (tokens) in the input set or sequence of characters, for their
+                    subsequent identification and allocation of tokens (tokenization). In the general case in the
+                    lexical process
+                    analysis of input data is a stream of characters, and output - a set of classified tokens
+                    (classification may have different levels of complexity) [1].
+                </p>
+                <p>
+                    The syntax analysis is the process of processing a set of tokens (in general, tokens)
+                    a certain formal language with its grammar. This process is performed syntactically.
+                    analyzer (parser), which accepts the input of the work of the previous lexical
+                    analysis. The output of the parse is a syntax tree or tree
+                    parse, which is the entire syntactic structure of the analyzed sequence
+                    characters [2].
+                </p>
+                <p>
+                    A bunch of lexical and parser is used in many areas.
+                    programming and not only writing them manually is quite time-consuming process
+                    therefore, in many software products, compilers, interpreters, etc. are used
+                    analyzer generators [8].
+                </p>
+                <p>
+                    Generators of lexical and syntactic analyzers take as input lexical and syntactic
+                    the structure of the language in some formal representation, at the output we get the source code of
+                    the lexer
+                    and a parser in one of the programming languages (the language depends on the selected generator).
+                </p>
+                <p>
+                    As you can see, the analysis of the SQL code of the database structure consists of several
+                    consecutive
+                    transformations of the source code and its further processing. The full algorithm of the work of the
+                    SABD is shown in
+                    figure 1.
+                </p>
+            </div>
+
+            <div id="analyze">
+                <p class="title">Techniques and methodologies of static analysis</p>
+                <p>
+                    One of the most important techniques of static code analysis is data flow analysis. This is a method
+                    gathering information about a possible set of calculated values and options for their use in various
+                    points of the program [4]. The data obtained from this process is often used when
+                    program optimization. This process is possible through the construction and analysis of the control
+                    flow graph (CFG) (fig. 2.).
+                </p>
+                <p class="text-center">
+                    <img id="cfg-img" src="../img/cfg.png"/>
+                    <br>
+                    <span>Figure 2 - Control flow graph</span>
+                </p>
+                <p>
+                    The CFG is a representation using the graph of all the paths of the program. In the flow graph
+                    control, each node represents a base unit, that is, a rectilinear piece of code without any
+                    transitions. Directed edges are used to represent links and transitions between basic
+                    blocks in the control flow. In most notations, there are two specially marked blocks: input
+                    the block through which the control enters the flow graph, and the output block through which the entire
+                    control flow [5].
+                </p>
+                <p>
+                    Analyzing such a structure allows determining the places for calculating the values of certain variables
+                    identify the code blocks in which these values are used. Thus, it is possible to trace the path
+                    variables and their values according to the program and identify vulnerabilities or opportunities for optimization.
+                </p>
+                <p>
+                    Also worth noting is the technique of matching pattern matching. She is in
+                    compiling a list of certain anti-patterns of the use of certain language constructions and
+                    identifying in the source code fragments corresponding to them.
+                </p>
+                <p>
+                    For the SQL language in the context of describing the structure of the database, you can give an example of identifying
+                    stylistic and logical inconsistencies by pattern matching. In figure 3
+                    There are two options for describing tables. In the first case, a logical error was made, since the field
+                    the “users” table implicitly refers to the “roles” table - the foreign key is missing. In the second case
+                    a stylistic error was made because the foreign key was created, but the field name was not set appropriately
+                    standards.
+                </p>
+                <p class="text-center" id="fake-outro">
+                    <img id="sql-img" src="../img/sql.png"/>
+                    <br>
+                    <span>Figure 3 - Errors in database structure</span>
+                </p>
+                <p>
+                    Similarly, any formalized rule can be analyzed. Based on the specification
+                    SQL and recommendations made by the developer community can form the necessary list
+                    of these rules, for the effective operation of the automated system of static analysis.
+                </p>
+            </div>
+
+            <div id="outro">
+                <p class="title">Conclusion</p>
+                <p>
+                    In this paper, the basic concepts and subject of the master's project were described.
+                </p>
+                <p>
+                    An analysis was made of existing solutions, following which we can conclude that
+                    moment of universal decisions on the analysis of the quality of the database structure in the context of any dialect
+                    SQL is not.
+                </p>
+                <p>
+                    Were also considered techniques of static code analysis, which will be used in the development of
+                    SFAD. The list of applied techniques will need to be expanded to cover aspects of the analysis,
+                    missing in existing systems.
+                </p>
+                <p>
+                    According to the results of the work carried out, it is planned to continue research and practical application
+                    achievements.
+                </p>
+            </div>
+
+            <div id="links">
+                <p class="title">List of sources</p>
+                <p>
+                    1. Хантер Р. / Основные концепции компиляторов / 2002г. – 256с.
+                </p>
+                <p>
+                    2. А. Ахо, Дж. Ульман. / Теория синтаксического анализа, перевода и компиляции / 1978г. – 614с.
+                </p>
+                <p class="link-body">
+                    3. Синтаксический анализ кода / Habrahabr / Электронный ресурс –
+                    Режим доступа:
+                    <a class="link" target="_blank" href="https://habr.com/company/pvs-studio/blog/254855/">
+                        https://habr.com/company/pvs-studio/blog/254855/
+                    </a>
+                </p>
+                <p>
+                    4. Khedker U., Sanyal A., Sathe B. / Data Flow Analysis: Theory and Practic / 2009г. – 328с.
+                </p>
+                <p class="link-body">
+                    5. Kam, John B.; Ullman, Jeffrey / Global Data Flow Analysis and Iterative Algorithms / Электронный
+                    ресурс –
+                    Режим доступа:
+                    <a class="link" target="_blank" href="http://rsim.cs.uiuc.edu/arch/qual_papers/compilers/kam.pdf">
+                        http://rsim.cs.uiuc.edu/arch/qual_papers/compilers/kam.pdf
+                    </a>
+                </p>
+                <p class="link-body">
+                    6. Microsoft Total Access Analyzer / Электронный ресурс –
+                    Режим доступа:
+                    <a class="link" target="_blank" href="http://masters.donntu.org/2016/fknt/safonov/diss/index.htm">
+                        http://masters.donntu.org/2016/fknt/safonov/diss/index.htm
+                    </a>
+                </p>
+                <p class="link-body">
+                    7. Sonarsource / Электронный ресурс –
+                    Режим доступа:
+                    <a class="link" target="_blank" href="https://www.sonarsource.com/">
+                        https://www.sonarsource.com/
+                    </a>
+                </p>
+                <p class="link-body">
+                    8. Генераторы лексических и синтаксических анализаторов / Электронный ресурс –
+                    Режим доступа:
+                    <a class="link" target="_blank" href="http://www.kulichki.net/kit/tools/lexparse.html">
+                        http://www.kulichki.net/kit/tools/lexparse.html
+                    </a>
+                </p>
+                <p class="link-body">
+                    9. Заславский В.А. / Система оптимизации клиентских запросов к серверам распределённой базы данных /
+                    Электронный ресурс –
+                    Режим доступа:
+                    <a class="link" target="_blank"
+                       href="http://masters.donntu.org/2011/fknt/zaslavskiy/diss/index.htm">
+                        http://masters.donntu.org/2011/fknt/zaslavskiy/diss/index.htm
+                    </a>
+                </p>
+                <p class="link-body">
+                    10. Введение в теорию трансляторов / Электронный ресурс –
+                    Режим доступа:
+                    <a class="link" target="_blank" href="http://bourabai.kz/tpoi/compilers.htm">
+                        http://bourabai.kz/tpoi/compilers.htm
+                    </a>
+                </p>
+            </div>
+        </div>
+    </main>
+</div>
+
+<script type="application/javascript">
+    function updateLinks() {
+        updateLink(document.getElementById("intro"), document.getElementById("intro-link"));
+        updateLink(document.getElementById("relevance"), document.getElementById("relevance-link"));
+        updateLink(document.getElementById("goal"), document.getElementById("goal-link"));
+        updateLink(document.getElementById("world"), document.getElementById("world-link"));
+        updateLink(document.getElementById("local"), document.getElementById("local-link"));
+        updateLink(document.getElementById("flow"), document.getElementById("flow-link"));
+        updateLink(document.getElementById("analyze"), document.getElementById("analyze-link"));
+        updateLink(document.getElementById("outro"), document.getElementById("outro-link"));
+        updateLink(document.getElementById("links"), document.getElementById("links-link"));
+    }
+</script>
+<script src="../js/main.js" type="application/javascript"></script>
+</body>
+
+</html>
