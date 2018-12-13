@@ -27,9 +27,20 @@
             <a class="menu-item" href="../diss/index.html">
                 Реферат
             </a>
-            <a class="menu-item active" href="index.html">
-                Библиотека
-            </a>
+            <div class="sub-menu">
+                <a class="menu-item active" href="index.html">
+                    Библиотека
+                </a>
+                <a class="sub-menu-item active" id="self-link" href="#self">
+                    Собственные публикации и доклады
+                </a>
+                <a class="sub-menu-item" id="external-link" href="#external">
+                    Тематические статьи
+                </a>
+                <a class="sub-menu-item" id="translate-link" href="#translate">
+                    Переводы статей
+                </a>
+            </div>
             <a class="menu-item" href="../links/index.html">
                 Ссылки
             </a>
@@ -45,244 +56,264 @@
             <p class="sub-header">Библиотека</p>
         </header>
         <div class="main-content">
-            <p class="title">Собственные публикации и доклады</p>
-            <div class="link-body">
-                <span class="link-number">1.</span>
-                <a class="link" href="article1.html">
-                    Выявление критериев и компонентов качества структур реляционных данных для системы
-                    автоматизированного анализа
-                </a>
-                <p class="link-info">
-                    <span class="link-info-title">Авторы:</span>
-                    Варяник А.С., Грищенко В.И.
-                </p>
-                <p class="link-info">
-                    <span class="link-info-title">Описание:</span>
-                    В статье проведен анализ компонентов баз данных, влияющих на качество работы и производительность.
-                </p>
-                <p class="link-info">
-                    <span class="link-info-title">Источник:</span>
-                    Информатика, управляющие системы,
-                    математическое и компьютерное моделирование
-                    (ИУСМКМ-2018) /
-                    Сборник материалов IX Международной научно-технической
-                    конференции в рамках
-                    IV Международного Научного форума
-                    Донецкой Народной Республики – Донецк, ДонНТУ – 2018 г.
-                </p>
-            </div>
-            <div class="link-body">
-                <span class="link-number">2.</span>
-                <a class="link" href="article2.html">
-                    Лексический и синтаксический разбор как первый этап статического анализа SQL-кода
-                </a>
-                <p class="link-info">
-                    <span class="link-info-title">Авторы:</span>
-                    Варяник А.С., Грищенко В.И.
-                </p>
-                <p class="link-info">
-                    <span class="link-info-title">Описание:</span>
-                    В статье выявлена сущность и предмет статического анализа SQL-кода для оценки качества структуры
-                    базы данных.
-                    Выделены этапы подготовки исходного SQL к процессу статического анализа. Исследованы существующие
-                    средства реализации лексического и синтаксического разбора и их применения в контексте задачи.
-                </p>
-                <p class="link-info">
-                    <span class="link-info-title">Источник:</span>
-                    Программная инженерия:
-                    методы и технологии разработки информационновычислительных
-                    систем
-                    (ПИИВС-2018) /
-                    Сборник материалов II Международной научно-практической
-                    конференции
-                    (студенческая секция) – Донецк, ДонНТУ – 2018 г. – 19-22 c.
-                </p>
-            </div>
-            <p class="title">Тематические статьи</p>
-            <div class="link-body">
-                <span class="link-number">3.</span>
-                <a class="link" target="_blank" href="article3.pdf">
-                    Использование зависимостей для повышения точности статического анализа программ
-                </a>
-                <p class="link-info">
-                    <span class="link-info-title">Авторы:</span>
-                    Глухих М.И., Ицыксон В.М., Цесько В.А.
-                </p>
-                <p class="link-info">
-                    <span class="link-info-title">Описание:</span>
-                    Статья посвящена разработке методов анализа зависимостей с целью повышения
-                    точности статического анализа. Рассмотрены причины, ведущие к
-                    снижению точности абстрактной интерпретации при обнаружении дефектов
-                    в программном коде.
-                </p>
-                <p class="link-info">
-                    <span class="link-info-title">Источник:</span>
-                    <a class="link" target="_blank" href="http://www.mathnet.ru/">
-                        Общероссийский математический портал
+            <div id="self">
+                <p class="title">Собственные публикации и доклады</p>
+                <div class="link-body">
+                    <span class="link-number">1.</span>
+                    <a class="link" href="article1.html">
+                        Выявление критериев и компонентов качества структур реляционных данных для системы
+                        автоматизированного анализа
                     </a>
-                </p>
-            </div>
-            <div class="link-body">
-                <span class="link-number">4.</span>
-                <a class="link" target="_blank" href="article4.pdf">
-                    Abstract Syntax Tree Implementation Idioms
-                </a>
-                <p class="link-info">
-                    <span class="link-info-title">Авторы:</span>
-                    Jones J.
-                </p>
-                <p class="link-info">
-                    <span class="link-info-title">Описание:</span>
-                    В статье описаны проблемы и решение задачи представления конструкций исходного кода, полученные
-                    в
-                    результате анализа,
-                    на языке реализации транслятора.
-                </p>
-                <p class="link-info">
-                    <span class="link-info-title">Источник:</span>
-                    <a class="link" target="_blank" href="https://www.hillside.net/">
-                        The Hillside Group
+                    <p class="link-info">
+                        <span class="link-info-title">Авторы:</span>
+                        Варяник А.С., Грищенко В.И.
+                    </p>
+                    <p class="link-info">
+                        <span class="link-info-title">Описание:</span>
+                        В статье проведен анализ компонентов баз данных, влияющих на качество работы и
+                        производительность.
+                    </p>
+                    <p class="link-info">
+                        <span class="link-info-title">Источник:</span>
+                        Информатика, управляющие системы,
+                        математическое и компьютерное моделирование
+                        (ИУСМКМ-2018) /
+                        Сборник материалов IX Международной научно-технической
+                        конференции в рамках
+                        IV Международного Научного форума
+                        Донецкой Народной Республики – Донецк, ДонНТУ – 2018 г.
+                    </p>
+                </div>
+                <div class="link-body">
+                    <span class="link-number">2.</span>
+                    <a class="link" href="article2.html">
+                        Лексический и синтаксический разбор как первый этап статического анализа SQL-кода
                     </a>
-                </p>
+                    <p class="link-info">
+                        <span class="link-info-title">Авторы:</span>
+                        Варяник А.С., Грищенко В.И.
+                    </p>
+                    <p class="link-info">
+                        <span class="link-info-title">Описание:</span>
+                        В статье выявлена сущность и предмет статического анализа SQL-кода для оценки качества структуры
+                        базы данных.
+                        Выделены этапы подготовки исходного SQL к процессу статического анализа. Исследованы
+                        существующие
+                        средства реализации лексического и синтаксического разбора и их применения в контексте задачи.
+                    </p>
+                    <p class="link-info">
+                        <span class="link-info-title">Источник:</span>
+                        Программная инженерия:
+                        методы и технологии разработки информационновычислительных
+                        систем
+                        (ПИИВС-2018) /
+                        Сборник материалов II Международной научно-практической
+                        конференции
+                        (студенческая секция) – Донецк, ДонНТУ – 2018 г. – 19-22 c.
+                    </p>
+                </div>
             </div>
-            <div class="link-body">
-                <span class="link-number">5.</span>
-                <a class="link" target="_blank" href="article5.pdf">
-                    Global Data Flow Analysis and Iterative Algorithms
-                </a>
-                <p class="link-info">
-                    <span class="link-info-title">Авторы:</span>
-                    Kam, John B., Ullman J.
-                </p>
-                <p class="link-info">
-                    <span class="link-info-title">Описание:</span>
-                    В статье описаны алгоритмы анализа потока данных, а также построения и обработки графа потока
-                    управления программой
-                </p>
-                <p class="link-info">
-                    <span class="link-info-title">Источник:</span>
-                    <a class="link" target="_blank" href="http://rsim.cs.uiuc.edu/">
-                        Sarita Adve's Research Group
+
+            <div id="external">
+                <p class="title">Тематические статьи</p>
+                <div class="link-body">
+                    <span class="link-number">3.</span>
+                    <a class="link" target="_blank" href="article3.pdf">
+                        Использование зависимостей для повышения точности статического анализа программ
                     </a>
-                </p>
+                    <p class="link-info">
+                        <span class="link-info-title">Авторы:</span>
+                        Глухих М.И., Ицыксон В.М., Цесько В.А.
+                    </p>
+                    <p class="link-info">
+                        <span class="link-info-title">Описание:</span>
+                        Статья посвящена разработке методов анализа зависимостей с целью повышения
+                        точности статического анализа. Рассмотрены причины, ведущие к
+                        снижению точности абстрактной интерпретации при обнаружении дефектов
+                        в программном коде.
+                    </p>
+                    <p class="link-info">
+                        <span class="link-info-title">Источник:</span>
+                        <a class="link" target="_blank" href="http://www.mathnet.ru/">
+                            Общероссийский математический портал
+                        </a>
+                    </p>
+                </div>
+                <div class="link-body">
+                    <span class="link-number">4.</span>
+                    <a class="link" target="_blank" href="article4.pdf">
+                        Abstract Syntax Tree Implementation Idioms
+                    </a>
+                    <p class="link-info">
+                        <span class="link-info-title">Авторы:</span>
+                        Jones J.
+                    </p>
+                    <p class="link-info">
+                        <span class="link-info-title">Описание:</span>
+                        В статье описаны проблемы и решение задачи представления конструкций исходного кода, полученные
+                        в
+                        результате анализа,
+                        на языке реализации транслятора.
+                    </p>
+                    <p class="link-info">
+                        <span class="link-info-title">Источник:</span>
+                        <a class="link" target="_blank" href="https://www.hillside.net/">
+                            The Hillside Group
+                        </a>
+                    </p>
+                </div>
+                <div class="link-body">
+                    <span class="link-number">5.</span>
+                    <a class="link" target="_blank" href="article5.pdf">
+                        Global Data Flow Analysis and Iterative Algorithms
+                    </a>
+                    <p class="link-info">
+                        <span class="link-info-title">Авторы:</span>
+                        Kam, John B., Ullman J.
+                    </p>
+                    <p class="link-info">
+                        <span class="link-info-title">Описание:</span>
+                        В статье описаны алгоритмы анализа потока данных, а также построения и обработки графа потока
+                        управления программой
+                    </p>
+                    <p class="link-info">
+                        <span class="link-info-title">Источник:</span>
+                        <a class="link" target="_blank" href="http://rsim.cs.uiuc.edu/">
+                            Sarita Adve's Research Group
+                        </a>
+                    </p>
+                </div>
+                <div class="link-body">
+                    <span class="link-number">6.</span>
+                    <a class="link" target="_blank" href="article6.pdf">
+                        Инкрементальный статический анализ кода
+                        на основе разложения отношений
+                    </a>
+                    <p class="link-info">
+                        <span class="link-info-title">Авторы:</span>
+                        Кириллин А.В.
+                    </p>
+                    <p class="link-info">
+                        <span class="link-info-title">Описание:</span>
+                        В статье рассматривается подход к инкрементализации статического анализа кода, позволяющий
+                        выполнять
+                        эффективный пересчет результатов анализа при малых изменениях кода
+                    </p>
+                    <p class="link-info">
+                        <span class="link-info-title">Источник:</span>
+                        <a class="link" target="_blank" href="http://sysprog.info/">
+                            Системное программирование. Периодическое научное издание
+                        </a>
+                    </p>
+                </div>
+                <div class="link-body">
+                    <span class="link-number">7.</span>
+                    <a class="link" target="_blank" href="article7.pdf">
+                        Технологии статического и динамического анализа уязвимостей программного обеспечения
+                    </a>
+                    <p class="link-info">
+                        <span class="link-info-title">Авторы:</span>
+                        Аветисян А., Белеванцев А., Чукляев И.
+                    </p>
+                    <p class="link-info">
+                        <span class="link-info-title">Описание:</span>
+                        В статье описано практическое использование статического анализа для поиска ошибок и уязвимостей
+                        в
+                        исходном коде.
+                    </p>
+                    <p class="link-info">
+                        <span class="link-info-title">Источник:</span>
+                        <a class="link" target="_blank" href="http://cyberrus.com/">
+                            Журнал «Вопросы кибербезопасности»
+                        </a>
+                    </p>
+                </div>
+                <div class="link-body">
+                    <span class="link-number">8.</span>
+                    <a class="link" target="_blank" href="article8.pdf">
+                        Обработка запросов в системах баз данных
+                    </a>
+                    <p class="link-info">
+                        <span class="link-info-title">Авторы:</span>
+                        Соколинский Л.Б.
+                    </p>
+                    <p class="link-info">
+                        <span class="link-info-title">Описание:</span>
+                        В статье описан процесс лексического и синтаксического анализа SQL-запросов, а так же обработка
+                        полученного дерева разбора.
+                    </p>
+                    <p class="link-info">
+                        <span class="link-info-title">Источник:</span>
+                        <a class="link" target="_blank" href="https://sok.susu.ru/">
+                            Леонид Борисович Соколинский. Официальная страница
+                        </a>
+                    </p>
+                </div>
+                <div class="link-body">
+                    <span class="link-number">9.</span>
+                    <a class="link" target="_blank" href="article9.pdf">
+                        Clone Detection Using Abstract Syntax Trees
+                    </a>
+                    <p class="link-info">
+                        <span class="link-info-title">Авторы:</span>
+                        Baxter I., Yahin A.
+                    </p>
+                    <p class="link-info">
+                        <span class="link-info-title">Описание:</span>
+                        В статье описаны принципы поиска дубликатов в исходном коде с использованием абстрактных
+                        синтаксических деревьев.
+                    </p>
+                    <p class="link-info">
+                        <span class="link-info-title">Источник:</span>
+                        <a class="link" target="_blank" href="http://www.semanticdesigns.com">
+                            Semantic Designs
+                        </a>
+                    </p>
+                </div>
             </div>
-            <div class="link-body">
-                <span class="link-number">6.</span>
-                <a class="link" target="_blank" href="article6.pdf">
-                    Инкрементальный статический анализ кода
-                    на основе разложения отношений
-                </a>
-                <p class="link-info">
-                    <span class="link-info-title">Авторы:</span>
-                    Кириллин А.В.
-                </p>
-                <p class="link-info">
-                    <span class="link-info-title">Описание:</span>
-                    В статье рассматривается подход к инкрементализации статического анализа кода, позволяющий
-                    выполнять
-                    эффективный пересчет результатов анализа при малых изменениях кода
-                </p>
-                <p class="link-info">
-                    <span class="link-info-title">Источник:</span>
-                    <a class="link" target="_blank" href="http://sysprog.info/">
-                        Системное программирование. Периодическое научное издание
+
+            <div id="translate">
+                <p class="title">Переводы статей</p>
+                <div class="link-body">
+                    <span class="link-number">10.</span>
+                    <a class="link" href="article10.html">
+                        Анализ кода базы данных
                     </a>
-                </p>
-            </div>
-            <div class="link-body">
-                <span class="link-number">7.</span>
-                <a class="link" target="_blank" href="article7.pdf">
-                    Технологии статического и динамического анализа уязвимостей программного обеспечения
-                </a>
-                <p class="link-info">
-                    <span class="link-info-title">Авторы:</span>
-                    Аветисян А., Белеванцев А., Чукляев И.
-                </p>
-                <p class="link-info">
-                    <span class="link-info-title">Описание:</span>
-                    В статье описано практическое использование статического анализа для поиска ошибок и уязвимостей
-                    в
-                    исходном коде.
-                </p>
-                <p class="link-info">
-                    <span class="link-info-title">Источник:</span>
-                    <a class="link" target="_blank" href="http://cyberrus.com/">
-                        Журнал «Вопросы кибербезопасности»
-                    </a>
-                </p>
-            </div>
-            <div class="link-body">
-                <span class="link-number">8.</span>
-                <a class="link" target="_blank" href="article8.pdf">
-                    Обработка запросов в системах баз данных
-                </a>
-                <p class="link-info">
-                    <span class="link-info-title">Авторы:</span>
-                    Соколинский Л.Б.
-                </p>
-                <p class="link-info">
-                    <span class="link-info-title">Описание:</span>
-                    В статье описан процесс лексического и синтаксического анализа SQL-запросов, а так же обработка
-                    полученного дерева разбора.
-                </p>
-                <p class="link-info">
-                    <span class="link-info-title">Источник:</span>
-                    <a class="link" target="_blank" href="https://sok.susu.ru/">
-                        Леонид Борисович Соколинский. Официальная страница
-                    </a>
-                </p>
-            </div>
-            <div class="link-body">
-                <span class="link-number">9.</span>
-                <a class="link" target="_blank" href="article9.pdf">
-                    Clone Detection Using Abstract Syntax Trees
-                </a>
-                <p class="link-info">
-                    <span class="link-info-title">Авторы:</span>
-                    Baxter I., Yahin A.
-                </p>
-                <p class="link-info">
-                    <span class="link-info-title">Описание:</span>
-                    В статье описаны принципы поиска дубликатов в исходном коде с использованием абстрактных
-                    синтаксических деревьев.
-                </p>
-                <p class="link-info">
-                    <span class="link-info-title">Источник:</span>
-                    <a class="link" target="_blank" href="http://www.semanticdesigns.com">
-                        Semantic Designs
-                    </a>
-                </p>
-            </div>
-            <p class="title">Переводы статей</p>
-            <div class="link-body">
-                <span class="link-number">10.</span>
-                <a class="link" href="article10.html">
-                    Анализ кода базы данных
-                </a>
-                <p class="link-info">
-                    <span class="link-info-title">Авторы:</span>
-                    William B.
-                </p>
-                <p class="link-info">
-                    <span class="link-info-title">Автор перевода:</span>
-                    Варяник А.С.
-                </p>
-                <p class="link-info">
-                    <span class="link-info-title">Описание:</span>
-                    В статье приведены мысли автора о статическом и динамическом анализе SQL-кода базы данных и личный
-                    опыт встраивания этого процесса в разработку в корпоративной среде.
-                </p>
-                <p class="link-info">
-                    <span class="link-info-title">Источник(англ.):</span>
-                    <a class="link" target="_blank"
-                       href="https://www.red-gate.com/simple-talk/sql/database-devops-sql/database-code-analysis/">
-                        Redgate Software
-                    </a>
-                </p>
+                    <p class="link-info">
+                        <span class="link-info-title">Авторы:</span>
+                        William B.
+                    </p>
+                    <p class="link-info">
+                        <span class="link-info-title">Автор перевода:</span>
+                        Варяник А.С.
+                    </p>
+                    <p class="link-info">
+                        <span class="link-info-title">Описание:</span>
+                        В статье приведены мысли автора о статическом и динамическом анализе SQL-кода базы данных и
+                        личный
+                        опыт встраивания этого процесса в разработку в корпоративной среде.
+                    </p>
+                    <p class="link-info">
+                        <span class="link-info-title">Источник(англ.):</span>
+                        <a class="link" target="_blank"
+                           href="https://www.red-gate.com/simple-talk/sql/database-devops-sql/database-code-analysis/">
+                            Redgate Software
+                        </a>
+                    </p>
+                </div>
             </div>
         </div>
     </main>
 </div>
+
+<script type="application/javascript">
+    function updateLinks() {
+        updateLink(document.getElementById("self"), document.getElementById("self-link"));
+        updateLink(document.getElementById("external"), document.getElementById("external-link"));
+        updateLink(document.getElementById("translate"), document.getElementById("translate-link"), true);
+    }
+</script>
+<script src="../js/main.js" type="application/javascript"></script>
 </body>
 
 </html>
