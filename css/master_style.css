@@ -35,7 +35,6 @@ nav .divider {
 nav .menu .menu-item {
     display: block;
     padding: 15px;
-    border-bottom: 1px solid;
     color: black;
     text-decoration: none;
 }
@@ -50,7 +49,7 @@ nav .menu .menu-item.active, nav .menu .sub-menu-item.active {
 }
 
 nav .menu .sub-menu .menu-item {
-    border: none;
+    border: none !important;
 }
 
 nav .menu .sub-menu-item {
@@ -60,7 +59,7 @@ nav .menu .sub-menu-item {
     text-decoration: none;
 }
 
-nav .menu .sub-menu:not(:last-child) .sub-menu-item:last-of-type {
+nav .menu .sub-menu:not(:last-child) .sub-menu-item:last-of-type, nav .menu .menu-item {
     border-bottom: 1px solid;
 }
 
