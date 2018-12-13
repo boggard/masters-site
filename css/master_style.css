@@ -126,7 +126,7 @@ table#resume tr td:first-of-type {
     width: 20%;
 }
 
-#biography p:not(.title), #ind p:not(.title), #diss p:not(.title) {
+#biography p:not(.title), #ind p:not(.title), #diss p:not(.title), #article p:not(.title) {
     text-indent: 20pt;
     word-wrap: break-word;
     text-align: justify;
@@ -143,6 +143,10 @@ p.text-center {
 
 .link-body .link-info {
     margin-left: 15px;
+}
+
+#article .link-body .link-info {
+    margin-left: 0;
 }
 
 .link-body .link, .link-body .link-info .link-info-title {
@@ -172,4 +176,8 @@ p span.list-item {
 
 #sql-img {
     width: 250px;
+}
+
+#article2-img1 {
+    width: 400px;
 }
