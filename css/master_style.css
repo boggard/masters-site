@@ -112,7 +112,7 @@ main .main-content {
     margin-top: 15px;
 }
 
-table#resume {
+table#resume, #search table {
     border-collapse: collapse;
 }
 
@@ -127,7 +127,28 @@ table#resume tr td:first-of-type {
     width: 20%;
 }
 
-#biography p:not(.title), #ind p:not(.title), #diss p:not(.title), #article p:not(.title) {
+#search table {
+    margin: auto;
+}
+
+#search table thead tr {
+    background-color: #e7e6d4;
+}
+
+#search table td, #search table th {
+    padding: 5px;
+    border: 1px solid black;
+}
+
+#search table th img {
+    width: 50px;
+}
+
+#search table td a {
+    color: #969245;
+}
+
+#biography p:not(.title), #ind p:not(.title), #diss p:not(.title), #article p:not(.title), #search p:not(.title) {
     text-indent: 20pt;
     word-wrap: break-word;
     text-align: justify;
@@ -138,7 +159,7 @@ p.title {
     font-size: 20px;
 }
 
-p.text-center {
+.text-center {
     text-align: center !important;
 }
 
