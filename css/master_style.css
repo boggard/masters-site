@@ -147,7 +147,7 @@ table#resume, #search table {
 table#resume td {
     padding-top: 10px;
     padding-bottom: 10px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid lightgray;
 }
 
 table#resume tr td:first-of-type {
@@ -165,7 +165,7 @@ table#resume tr td:first-of-type {
 
 #search table td, #search table th {
     padding: 5px;
-    border: 1px solid black;
+    border: 1px solid lightgray;
 }
 
 #search table th img {
