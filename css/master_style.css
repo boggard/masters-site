@@ -21,8 +21,8 @@ nav {
 }
 
 nav .bio {
-    background-color: #e7e6d4;
     padding: 8px 15px;
+    background-color: #e7e6d4;
     display: flex;
 }
 
@@ -90,6 +90,14 @@ header {
     position: relative;
 }
 
+header .since {
+    margin: 0 0 0 15px;
+}
+
+header .since a {
+    color: #969245;
+}
+
 header .main-header {
     margin: 0;
     padding-bottom: 5px;
@@ -109,6 +117,10 @@ header .locale {
     position: absolute;
     bottom: 5px;
     left: 15px;
+}
+
+header .locale img {
+    width: 20px;
 }
 
 main {
