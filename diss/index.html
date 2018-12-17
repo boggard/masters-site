@@ -12,8 +12,17 @@
 <div class="main-container">
     <nav>
         <div class="nav-item bio">
-            <div class="avatar"></div>
-            <p>Варяник Александр Сергеевич</p>
+            <div class="avatar">
+                <a href="../img/avatar.jpg">
+                    <img src="../img/avatar.jpg" alt="Магистр ДонНТУ Варяник Александр Сергеевич">
+                </a>
+            </div>
+            <div class="info">
+                <p class="name"><a href="../index.html">Варяник Александр Сергеевич</a></p>
+                <p>Факультет компьютерных наук и технологий</p>
+                <p>Кафедра программной инженерии</p>
+                <p>Специальность «Программная инженерия»</p>
+            </div>
         </div>
         <div class="divider"></div>
         <div class="menu">
@@ -36,17 +45,14 @@
                 <a class="sub-menu-item" id="goal-link" href="#fake-goal">
                     Цели и задачи исследования
                 </a>
-                <a class="sub-menu-item" id="world-link" href="#world">
-                    Анализ существующих мировых решений
-                </a>
-                <a class="sub-menu-item" id="local-link" href="#fake-local">
-                    Анализ существующих локальных решений
+                <a class="sub-menu-item" id="same-link" href="#same">
+                    Анализ существующих решений
                 </a>
                 <a class="sub-menu-item" id="flow-link" href="#flow">
                     Основные понятия и алгоритм работы системы
                 </a>
                 <a class="sub-menu-item" id="analyze-link" href="#analyze">
-                    Техники и методологии статического анализа
+                    Техники статического анализа
                 </a>
                 <a class="sub-menu-item" id="outro-link" href="#fake-outro">
                     Выводы
@@ -135,7 +141,7 @@
                     <span class="list-item">внедрение разработанной системы в процесс построения баз данных и ее практическое применение.</span>
                 </p>
             </div>
-            <div id="world">
+            <div id="same">
                 <p class="title">Анализ существующих мировых решений</p>
                 <p>
                     Из существующих систем автоматизированного анализа структур реляционных баз данных можно выделить
@@ -164,8 +170,6 @@
                     составляющих структуры базы данных, удобная навигация и поиск по ним. Но в перечне функционала
                     продукта также заявлен статический анализ PL/SQL-кода.
                 </p>
-            </div>
-            <div id="local">
                 <p class="title">Анализ существующих локальных решений</p>
                 <p>
                     Среди проектов выпускников ДонНТУ в области анализа и оптимизации работы с базами данных стоит
@@ -241,7 +245,7 @@
             </div>
 
             <div id="analyze">
-                <p class="title">Техники и методологии статического анализа</p>
+                <p class="title">Техники статического анализа</p>
                 <p>
                     Одной из наиболее важных техник статического анализа кода является анализ потоков данных. Это метод
                     сбора информации о возможном наборе вычисленных значений и вариантах их использования в различных
@@ -387,8 +391,7 @@
         updateLink(document.getElementById("intro"), document.getElementById("intro-link"));
         updateLink(document.getElementById("relevance"), document.getElementById("relevance-link"));
         updateLink(document.getElementById("goal"), document.getElementById("goal-link"));
-        updateLink(document.getElementById("world"), document.getElementById("world-link"));
-        updateLink(document.getElementById("local"), document.getElementById("local-link"));
+        updateLink(document.getElementById("same"), document.getElementById("same-link"));
         updateLink(document.getElementById("flow"), document.getElementById("flow-link"));
         updateLink(document.getElementById("analyze"), document.getElementById("analyze-link"));
         updateLink(document.getElementById("outro"), document.getElementById("outro-link"));

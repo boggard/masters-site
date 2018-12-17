@@ -9,7 +9,7 @@ body {
 
 nav {
     position: fixed;
-    width: 300px;
+    width: 400px;
     height: calc(100vh - 10px);
     overflow-y: auto;
     border: 1px solid lightgray;
@@ -22,11 +22,27 @@ nav {
 
 nav .bio {
     background-color: #e7e6d4;
-    padding: 10px;
+    padding: 8px 15px;
+    display: flex;
 }
 
-nav .bio p {
+nav .bio .avatar img {
+    width: 90px;
+}
+
+nav .bio .info p {
     text-align: center;
+    margin: 3px 2px;
+}
+
+nav .bio .info p.name {
+    margin-top: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+nav .bio .info p.name a {
+    color: #969245;
 }
 
 nav .divider {
@@ -96,8 +112,8 @@ header .locale {
 }
 
 main {
-    width: calc(100% - 290px);
-    margin-left: 315px;
+    width: calc(100% - 390px);
+    margin-left: 415px;
     margin-right: 0;
 }
 
