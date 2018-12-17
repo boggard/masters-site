@@ -46,7 +46,7 @@ nav .bio .info p.name a {
 }
 
 nav .divider {
-    border-bottom: 3px double;
+    border-bottom: 3px lightgray double;
 }
 
 nav .menu .menu-item {
@@ -77,7 +77,7 @@ nav .menu .sub-menu-item {
 }
 
 nav .menu .sub-menu:not(:last-child) .sub-menu-item:last-of-type, nav .menu .menu-item {
-    border-bottom: 1px solid;
+    border-bottom: 1px solid lightgray;
 }
 
 header {
