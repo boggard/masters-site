@@ -176,6 +176,10 @@ table#resume tr td:first-of-type {
     color: #969245;
 }
 
+#search table:first-of-type {
+    margin-bottom: 20px;
+}
+
 #biography p:not(.title), #ind p:not(.title), #diss p:not(.title), #article p:not(.title), #search p:not(.title) {
     text-indent: 20pt;
     word-wrap: break-word;
