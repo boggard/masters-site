@@ -90,12 +90,21 @@ header {
     position: relative;
 }
 
-header .since {
+header .header-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .header-links a {
+    color: #969245;
+}
+
+header .header-links .since {
     margin: 0 0 0 15px;
 }
 
-header .since a {
-    color: #969245;
+header .header-links .sites {
+    margin-right: 15px;
 }
 
 header .main-header {
