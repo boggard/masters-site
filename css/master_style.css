@@ -180,6 +180,7 @@ table#resume tr td:first-of-type {
     text-indent: 20pt;
     word-wrap: break-word;
     text-align: justify;
+    margin: 0;
 }
 
 p.title {
