@@ -19,8 +19,8 @@
             </div>
             <div class="info">
                 <p class="name"><a href="../indexe.html">Varyanik Alexander</a></p>
-                <p>Faculty	of computer science and technology</p>
-                <p>Department	of software engineering</p>
+                <p>Faculty of computer science and technology</p>
+                <p>Department of software engineering</p>
                 <p>Speciality "Software engineering"</p>
             </div>
         </div>
@@ -67,7 +67,7 @@
     <main>
         <header>
             <p class="since">Scientific adviser: <a target="_blank"
-                                                      href="http://masters.donntu.org/2003/fvti/greeschenko/indexe.htm">доц.
+                                                    href="http://masters.donntu.org/2003/fvti/greeschenko/indexe.htm">доц.
                 Victor Greeschenko</a></p>
             <p id="fake-intro" class="main-header">The system of automated analysis of the quality of the database
                 structure</p>
@@ -119,8 +119,8 @@
             <div id="goal">
                 <p class="title">Goals and objectives of the research</p>
                 <p>
-                    The purpose of this work is to design and build a system that allows
-                    automated analysis of the database structure described in the form of SQL instructions. According to
+                    The purpose of this work is to study and select the optimal methods of SQL-code static analysis
+                    allowing to assess the quality of database structure. According to
                     the results
                     work on the system should be solved the problem of allowing the developer to embed it
                     in the process of describing and building the database structure and getting the analysis results in
@@ -137,12 +137,14 @@
                     <span class="list-item">review of existing methods of static analysis, the choice of optimal solutions for the task and their application;</span>
                     <span class="list-item">introduction of the developed system into the database building process and its practical application.</span>
                 </p>
+                The object of the research is the analysis of the quality of the database structure.
+                The subject of research is the static analysis of the database SQL-code.
             </div>
             <div id="world">
                 <p class="title">Analysis of existing world solutions</p>
                 <p>
                     From existing systems for automated analysis of relational database structures can be distinguished
-                    product designed for Microsoft Office Access DBMS [6].
+                    product Microsoft Total Access Analyzer designed for Microsoft Office Access DBMS [6].
                 </p>
                 <p>
                     This software system works as an additional add-on for Microsoft Access and:
@@ -273,13 +275,16 @@
                     control, each node represents a base unit, that is, a rectilinear piece of code without any
                     transitions. Directed edges are used to represent links and transitions between basic
                     blocks in the control flow. In most notations, there are two specially marked blocks: input
-                    the block through which the control enters the flow graph, and the output block through which the entire
+                    the block through which the control enters the flow graph, and the output block through which the
+                    entire
                     control flow [5].
                 </p>
                 <p>
-                    Analyzing such a structure allows determining the places for calculating the values of certain variables
+                    Analyzing such a structure allows determining the places for calculating the values of certain
+                    variables
                     identify the code blocks in which these values are used. Thus, it is possible to trace the path
-                    variables and their values according to the program and identify vulnerabilities or opportunities for optimization.
+                    variables and their values according to the program and identify vulnerabilities or opportunities
+                    for optimization.
                 </p>
                 <p>
                     Also worth noting is the technique of matching pattern matching. She is in
@@ -287,11 +292,15 @@
                     identifying in the source code fragments corresponding to them.
                 </p>
                 <p>
-                    For the SQL language in the context of describing the structure of the database, you can give an example of identifying
+                    For the SQL language in the context of describing the structure of the database, you can give an
+                    example of identifying
                     stylistic and logical inconsistencies by pattern matching. In figure 3
-                    There are two options for describing tables. In the first case, a logical error was made, since the field
-                    the “users” table implicitly refers to the “roles” table - the foreign key is missing. In the second case
-                    a stylistic error was made because the foreign key was created, but the field name was not set appropriately
+                    There are two options for describing tables. In the first case, a logical error was made, since the
+                    field
+                    the “users” table implicitly refers to the “roles” table - the foreign key is missing. In the second
+                    case
+                    a stylistic error was made because the foreign key was created, but the field name was not set
+                    appropriately
                     standards.
                 </p>
                 <p class="text-center" id="fake-outro">
@@ -313,7 +322,8 @@
                 </p>
                 <p>
                     An analysis was made of existing solutions, following which we can conclude that
-                    moment of universal decisions on the analysis of the quality of the database structure in the context of any dialect
+                    moment of universal decisions on the analysis of the quality of the database structure in the
+                    context of any dialect
                     SQL is not.
                 </p>
                 <p>
@@ -322,7 +332,8 @@
                     missing in existing systems.
                 </p>
                 <p>
-                    According to the results of the work carried out, it is planned to continue research and practical application
+                    According to the results of the work carried out, it is planned to continue research and practical
+                    application
                     achievements.
                 </p>
             </div>
