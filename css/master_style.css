@@ -4,12 +4,18 @@ body {
 }
 
 .main-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 nav {
     position: fixed;
     width: 400px;
+    height: -webkit-calc(100vh - 10px);
+    height: -moz-calc(100vh - 10px);
     height: calc(100vh - 10px);
     overflow-y: auto;
     border: 1px solid lightgray;
@@ -23,6 +29,10 @@ nav {
 nav .bio {
     padding: 8px 15px;
     background-color: #e7e6d4;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -91,7 +101,15 @@ header {
 }
 
 header .header-links {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -133,6 +151,8 @@ header .locale img {
 }
 
 main {
+    width: -webkit-calc(100% - 390px);
+    width: -moz-calc(100% - 390px);
     width: calc(100% - 390px);
     margin-left: 415px;
     margin-right: 0;
