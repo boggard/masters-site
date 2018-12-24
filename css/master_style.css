@@ -200,6 +200,10 @@ table#resume tr td:first-of-type {
     font: 14pt/120% Century Gothic, serif
 }
 
+#biography img, #ind img, #diss img, #article img, #search img {
+    max-width: 90%;
+}
+
 p.title {
     text-align: center;
     font-size: 20px !important;
