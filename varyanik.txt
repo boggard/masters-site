@@ -10,5 +10,5 @@ ua
 
 en
 Varyanik Alexandr
-The system of automated analysis of the quality of the database structure
+The system of automated analysis of the database structure quality
 Software engineering
