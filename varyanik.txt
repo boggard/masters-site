@@ -1,9 +1,14 @@
 ru
 Варяник Александр Сергеевич
-Создание системы автоматизированного анализа качества структуры базы данных
-Инженерия программного обеспечения
+Система автоматизированного анализа качества структуры базы данных
+Программная инженерия
+
+ua
+Варяник Олександр Сергійович
+Система автоматизованого аналізу якості структури бази даних
+Програмна інженерія
 
 en
 Varyanik Alexandr
-Developing a system for automated analysis of the quality of the database structure
+The system of automated analysis of the quality of the database structure
 Software engineering
